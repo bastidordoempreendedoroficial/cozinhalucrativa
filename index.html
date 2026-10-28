@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cozinha Lucrativa — 3 planilhas de precificação para confeitaria, salgados e marmitas</title>
+<meta name="description" content="Combo Cozinha Lucrativa: três planilhas em Excel para organizar custos e definir preços em confeitaria, salgados e marmitas. R$ 47,00 com os manuais de utilização.">
+<meta name="author" content="Bastidor do Empreendedor">
+<meta property="og:title" content="Cozinha Lucrativa — Bastidor do Empreendedor">
+<meta property="og:description" content="Três planilhas de precificação em Excel para confeitaria, salgados e marmitas. Combo por R$ 47,00.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/bolo.jpg">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preload" href="fonts/karla-latin.woff2" as="font" type="font/woff2">
+<link rel="preload" href="fonts/marcellus-latin.woff2" as="font" type="font/woff2">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/karla-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/karla-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/karla-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/karla-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/karla-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/karla-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/marcellus-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/marcellus-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>/* Cozinha Lucrativa — Bastidor do Empreendedor
+   Paleta: creme #FAF4EB · baunilha #FFFDF9 · rosa antigo #D8A7A7 · chocolate #755448 · verde-sálvia #A8B9A3 */
+
+:root {
+  --creme: #FAF4EB;
+  --baunilha: #FFFDF9;
+  --rosa: #D8A7A7;
+  --choc: #755448;
+  --choc-escuro: #5E4239;
+  --salvia: #A8B9A3;
+  --texto: #4A362E;
+  --texto-suave: #6B564C;
+  --texto-fraco: #9A8478;
+  --borda: #EFE2D4;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--texto);
+  font-family: Karla, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--choc); text-decoration-color: var(--rosa); text-underline-offset: 3px; }
+a:hover { color: var(--rosa); }
+
+h1, h2, h3.serif, .serif {
+  font-family: Marcellus, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--choc);
+  text-wrap: pretty;
+}
+
+h1 { margin: 0 0 20px; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.12; }
+h2 { margin: 0 0 32px; font-size: clamp(26px, 3.2vw, 40px); line-height: 1.2; }
+
+.wrap { max-width: 1120px; margin: 0 auto; }
+.wrap-md { max-width: 1000px; margin: 0 auto; }
+.wrap-sm { max-width: 820px; margin: 0 auto; }
+
+section { padding: clamp(48px, 7vw, 88px) 20px; }
+.bg-creme { background: var(--creme); }
+.bg-baunilha { background: var(--baunilha); }
+.centro { text-align: center; }
+
+.sobre { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; margin: 0 0 20px; }
+.sobre-salvia { color: var(--salvia); }
+
+/* Cabeçalho */
+.topo {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  padding: 22px 20px; background: var(--baunilha); border-bottom: 1px solid var(--borda);
+}
+.topo img { width: 52px; height: 52px; border-radius: 12px; object-fit: cover; }
+.topo span {
+  font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--choc); font-weight: 700;
+}
+
+/* Botões */
+.btn {
+  display: inline-block; background: var(--choc); color: var(--baunilha);
+  font-size: 18px; font-weight: 700; padding: 18px 32px; border-radius: 999px;
+  text-decoration: none; box-shadow: 0 10px 24px rgba(117, 84, 72, 0.22);
+  transition: background 0.18s ease;
+}
+.btn:hover { background: var(--choc-escuro); color: var(--baunilha); }
+.btn-grande { font-size: 19px; padding: 20px 40px; }
+
+.btn-vazado {
+  display: block; text-align: center; margin-top: auto;
+  border: 2px solid var(--choc); color: var(--choc);
+  font-size: 16px; font-weight: 700; padding: 14px 20px; border-radius: 999px;
+  text-decoration: none; transition: background 0.18s ease, color 0.18s ease;
+}
+.btn-vazado:hover { background: var(--choc); color: var(--baunilha); }
+
+.btn-breve {
+  display: block; text-align: center; margin-top: auto;
+  border: 2px dashed #CBB8AB; color: var(--texto-fraco);
+  font-size: 16px; font-weight: 700; padding: 14px 20px; border-radius: 999px;
+}
+
+/* Primeira dobra */
+.hero { padding: clamp(40px, 7vw, 84px) 20px clamp(36px, 6vw, 72px); background: var(--baunilha); }
+.hero-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(28px, 5vw, 60px); align-items: center;
+}
+.hero p.lead { font-size: clamp(17px, 1.5vw, 20px); max-width: 34em; margin: 0 0 28px; }
+.hero p.sub { margin: 0 0 28px; color: var(--texto-suave); }
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; }
+.preco-rotulo { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--texto-fraco); }
+.preco-combo { font-family: Marcellus, Georgia, serif; font-size: 34px; color: var(--choc); line-height: 1.1; }
+.hero-fotos { display: grid; gap: 12px; }
+.hero-fotos > img { width: 100%; height: auto; aspect-ratio: 16 / 11; object-fit: cover; border-radius: 20px; }
+.hero-fotos-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-fotos-duo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; }
+
+/* Grades genéricas */
+.grade { display: grid; gap: 16px; }
+.g-260 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.g-280 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.g-290 { grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; }
+.g-240 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.g-230 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.g-270 { grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+
+/* Dores */
+.dor {
+  background: var(--baunilha); border: 1px solid var(--borda); border-radius: 16px;
+  padding: 24px; font-size: 17px; line-height: 1.55;
+}
+.dor .tracinho { width: 26px; height: 3px; background: var(--rosa); border-radius: 2px; margin-bottom: 16px; }
+
+/* Cards dos produtos */
+.card-produto {
+  background: var(--creme); border: 1px solid var(--borda); border-radius: 20px;
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.card-produto img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.card-produto .conteudo { padding: 26px; }
+.card-produto h3 { margin: 0 0 12px; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: 23px; line-height: 1.25; color: var(--choc); }
+.card-produto p { margin: 0; font-size: 16.5px; }
+
+.nota { font-size: 14px; line-height: 1.6; color: var(--texto-fraco); }
+.nota-centro { max-width: 760px; margin: 28px auto 0; text-align: center; }
+
+/* Como funciona */
+.etapas { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.etapas li {
+  display: grid; grid-template-columns: 56px 1fr; gap: 20px; align-items: start;
+  background: var(--baunilha); border: 1px solid var(--borda); border-radius: 16px; padding: 22px 24px;
+}
+.etapa-num {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--salvia); color: var(--baunilha);
+  font-family: Marcellus, Georgia, serif; font-size: 20px;
+}
+.etapas h3 { margin: 0 0 6px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--choc); font-weight: 700; }
+.etapas p { margin: 0; font-size: 17px; line-height: 1.55; }
+
+/* Produtos individuais x montados */
+.bloco-preco { background: var(--creme); border-radius: 20px; padding: 28px; }
+.bloco-preco.rosa { border-top: 4px solid var(--rosa); }
+.bloco-preco.salvia { border-top: 4px solid var(--salvia); }
+.bloco-preco h3 { margin: 0 0 12px; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: 22px; color: var(--choc); }
+.bloco-preco p { margin: 0 0 14px; font-size: 16.5px; }
+.bloco-preco p:last-child { margin: 0; }
+.exemplo {
+  background: var(--baunilha); border: 1px dashed var(--rosa); border-radius: 14px;
+  padding: 18px 20px; font-size: 16px; line-height: 1.5; color: var(--texto-suave);
+}
+
+/* Recursos */
+.recurso { background: var(--baunilha); border: 1px solid var(--borda); border-radius: 14px; padding: 20px 22px; }
+.recurso .ponto { display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--salvia); margin-bottom: 14px; }
+.recurso h3 { margin: 0 0 6px; font-size: 17px; font-weight: 700; color: var(--choc); line-height: 1.3; }
+.recurso p { margin: 0; font-size: 15.5px; line-height: 1.5; color: var(--texto-suave); }
+
+/* Vídeo */
+.video-moldura {
+  position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 20px;
+  overflow: hidden; background: var(--creme); border: 1px solid var(--borda);
+}
+.video-moldura iframe, .video-moldura video {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+.video-moldura video { object-fit: contain; background: #2B1F1A; }
+
+/* Galeria de prints — carrossel */
+.carrossel { margin: 0 auto; max-width: 820px; }
+.carrossel-principal {
+  position: relative; display: flex; align-items: center; gap: 10px;
+}
+.carrossel-imagem {
+  margin: 0; flex: 1 1 auto; min-width: 0; background: var(--baunilha);
+  border: 1px solid var(--borda); border-radius: 20px; overflow: hidden;
+  box-shadow: 0 16px 40px rgba(117, 84, 72, 0.14);
+}
+.carrossel-imagem button {
+  display: block; width: 100%; padding: 0; margin: 0; border: 0; background: none; cursor: zoom-in;
+}
+.carrossel-imagem img {
+  display: block; width: 100%; height: auto; max-height: 78vh; object-fit: contain;
+  background: var(--creme);
+}
+.carrossel-imagem figcaption {
+  padding: 14px 20px 18px; font-size: 15.5px; color: var(--texto-suave); text-align: center;
+}
+.carrossel-seta {
+  flex: 0 0 auto; display: grid; place-items: center; width: 44px; height: 44px;
+  border-radius: 50%; border: 1px solid var(--borda); background: var(--baunilha);
+  color: var(--choc); font-size: 20px; line-height: 1; cursor: pointer;
+  box-shadow: 0 6px 16px rgba(117, 84, 72, 0.12); transition: background 0.18s ease, color 0.18s ease;
+}
+.carrossel-seta:hover { background: var(--choc); color: var(--baunilha); }
+.carrossel-seta:focus-visible, .carrossel-imagem button:focus-visible, .miniatura:focus-visible {
+  outline: 3px solid var(--salvia); outline-offset: 2px;
+}
+.carrossel-contador {
+  margin: 14px 0 0; text-align: center; font-size: 13.5px;
+  letter-spacing: 0.08em; color: var(--texto-fraco);
+}
+.carrossel-miniaturas {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  margin: 20px 0 0; padding: 0;
+}
+.miniatura {
+  padding: 0; border: 2px solid var(--borda); border-radius: 10px; overflow: hidden;
+  width: 92px; height: 68px; cursor: pointer; background: var(--creme); flex: 0 0 auto;
+  transition: border-color 0.18s ease, opacity 0.18s ease; opacity: 0.72;
+}
+.miniatura img { display: block; width: 100%; height: 100%; object-fit: contain; background: var(--creme); }
+.miniatura:hover { opacity: 1; }
+.miniatura.ativa { border-color: var(--choc); opacity: 1; }
+
+#lightbox {
+  position: fixed; inset: 0; background: rgba(74, 54, 46, 0.88);
+  display: none; place-items: center; padding: 24px; z-index: 50; cursor: zoom-out;
+}
+#lightbox.aberto { display: grid; }
+#lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; }
+
+@media (max-width: 560px) {
+  /* No celular as setas ficam sobre a imagem, para ela ocupar toda a largura */
+  .carrossel-principal { display: block; }
+  .carrossel-seta {
+    position: absolute; top: 40%; z-index: 2; width: 36px; height: 36px; font-size: 16px;
+    background: rgba(255, 253, 249, 0.92);
+  }
+  .carrossel-anterior { left: 8px; }
+  .carrossel-proxima { right: 8px; }
+  .miniatura { width: 72px; height: 54px; }
+}
+
+/* O que está incluído */
+.incluido { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 12px; }
+.incluido li {
+  display: grid; grid-template-columns: 22px 1fr; gap: 16px; align-items: start;
+  font-size: 17.5px; line-height: 1.55; background: var(--creme); border-radius: 14px; padding: 18px 22px;
+}
+.incluido .quadrado { margin-top: 7px; display: block; width: 10px; height: 10px; border-radius: 3px; background: var(--rosa); }
+
+/* Oferta principal */
+.oferta { background: var(--choc); padding: clamp(52px, 7vw, 92px) 20px; }
+.oferta-card {
+  max-width: 860px; margin: 0 auto; background: var(--baunilha);
+  border-radius: 26px; padding: clamp(32px, 5vw, 56px); text-align: center;
+}
+.oferta-card h2 { margin: 0 0 30px; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.15; }
+.oferta-lista { display: grid; gap: 10px; margin-bottom: 30px; font-size: 18px; }
+.oferta-mais { color: var(--rosa); font-size: 22px; }
+.oferta-precos { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 16px; margin-bottom: 30px; }
+.preco-riscado { font-size: 18px; color: var(--texto-fraco); text-decoration: line-through; }
+.preco-destaque { font-family: Marcellus, Georgia, serif; font-size: clamp(44px, 6vw, 62px); color: var(--choc); line-height: 1; }
+
+/* Compra individual */
+.card-individual {
+  background: var(--baunilha); border: 1px solid var(--borda); border-radius: 20px;
+  padding: 26px; display: flex; flex-direction: column; gap: 14px;
+}
+.card-individual h3 { margin: 0; font-family: Marcellus, Georgia, serif; font-weight: 400; font-size: 21px; line-height: 1.25; color: var(--choc); }
+.card-individual .valor { font-family: Marcellus, Georgia, serif; font-size: 30px; color: var(--choc); }
+
+/* Feedbacks (relatos editados, composição em estilo de conversa) */
+.feedbacks-selo {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 auto 18px; padding: 8px 18px;
+  background: var(--rosa); color: var(--baunilha); border-radius: 999px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.feedbacks-aviso {
+  max-width: 640px; margin: 0 auto 36px; text-align: center; font-size: 14.5px;
+  line-height: 1.6; color: var(--texto-fraco); font-style: italic;
+}
+.feedbacks-grade {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;
+}
+.cartao-feedback {
+  background: var(--baunilha); border: 1px solid var(--borda); border-radius: 22px;
+  padding: 24px; display: flex; flex-direction: column; gap: 16px;
+  box-shadow: 0 14px 32px rgba(117, 84, 72, 0.1);
+}
+.cartao-feedback-cabecalho { display: flex; align-items: center; gap: 12px; }
+.cartao-feedback-icone {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--creme); font-size: 19px; flex: 0 0 auto;
+}
+.cartao-feedback-papel { font-family: Marcellus, Georgia, serif; font-size: 17px; color: var(--choc); }
+.balao-feedback {
+  position: relative; background: var(--creme); border: 1px solid var(--borda);
+  border-radius: 16px 16px 16px 4px; padding: 16px 18px; font-size: 16px; line-height: 1.55;
+}
+.baloes-feedback { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.baloes-feedback .balao-feedback { margin: 0; }
+.cartao-feedback-complemento {
+  margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--texto-suave);
+}
+.cartao-feedback-chip {
+  display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: 14px;
+  border-top: 1px solid var(--borda); font-size: 14px; color: var(--texto-suave);
+}
+.cartao-feedback-chip .pingo {
+  display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--salvia); flex: 0 0 auto;
+}
+
+/* FAQ */
+details {
+  background: var(--creme); border: 1px solid var(--borda);
+  border-radius: 14px; padding: 18px 22px;
+}
+details + details { margin-top: 10px; }
+summary { cursor: pointer; font-size: 17.5px; font-weight: 700; color: var(--choc); line-height: 1.4; }
+details p { margin: 14px 0 0; font-size: 16.5px; }
+
+/* Encerramento */
+.final { background: var(--creme); padding: clamp(56px, 8vw, 100px) 20px; text-align: center; }
+.final h2 { max-width: 760px; margin: 0 auto 32px; font-size: clamp(26px, 3.4vw, 42px); line-height: 1.25; }
+
+/* Rodapé */
+footer { padding: 48px 20px; background: var(--choc); color: #F3E7DB; }
+.rodape-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; align-items: start; }
+.rodape-marca { display: flex; align-items: center; gap: 14px; }
+.rodape-marca img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; }
+.rodape-marca span { font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; }
+.rodape-links { display: grid; gap: 8px; font-size: 15.5px; line-height: 1.5; }
+.rodape-links a { color: #F3E7DB; }
+.rodape-links a:hover { color: var(--rosa); }
+.rodape-titulo { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rosa); }
+.rodape-aviso { font-size: 14px; line-height: 1.6; color: #E2CFC0; }
+
+.oculto { display: none; }
+</style>
+
+<!-- ===================================================================
+     META PIXEL — cole o seu ID em script.js (constante META_PIXEL_ID).
+     Enquanto o ID estiver vazio, nenhum código de rastreamento é carregado.
+     PageView dispara no carregamento; InitiateCheckout apenas no clique
+     dos botões de compra. Purchase NÃO é disparado nesta página.
+     =================================================================== -->
+</head>
+<body>
+
+
+
+<header class="topo">
+  <img src="assets/logo.jpg" alt="Bastidor do Empreendedor">
+  <span>Bastidor do Empreendedor</span>
+</header>
+
+<main>
+  <!-- SEÇÃO 1 — PRIMEIRA DOBRA -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="sobre sobre-salvia">Cozinha Lucrativa</p>
+        <h1>Você prepara, produz e vende. Mas sabe quanto realmente ganha?</h1>
+        <p class="lead">Três planilhas para organizar os custos e definir os preços da sua produção — na confeitaria, nos salgados, nos lanches, nas marmitas e nas refeições.</p>
+        <p class="sub">3 planilhas de precificação, uma para cada tipo de produção.</p>
+        <div class="hero-cta">
+          <a class="btn js-checkout" href="https://pay.hotmart.com/D107650182B" target="_blank" rel="noopener">Quero o Cozinha Lucrativa</a>
+          <div>
+            <div class="preco-rotulo">Combo completo</div>
+            <div class="preco-combo">R$ 47,00</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-fotos">
+        <img src="assets/bolo.jpg" alt="Bolo de chocolate e brigadeiros artesanais">
+        <div class="hero-fotos-duo">
+          <img src="assets/coxinha.jpg" alt="Coxinhas douradas em tábua de madeira">
+          <img src="assets/marmita.jpg" alt="Marmita montada com arroz, frango grelhado e legumes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 2 — VÍDEO DEMONSTRATIVO
+       Ativa: video/cozinha-lucrativa.mp4 (arquivo real do projeto).
+       Poster: assets/video-poster.jpg — frame real extraído do próprio
+       vídeo (00:00, sem legenda sobreposta), não é uma imagem inventada.
+       Sem autoplay e sem áudio automático; controles nativos do navegador.
+       Se o arquivo de vídeo for trocado no futuro, basta sobrescrever
+       video/cozinha-lucrativa.mp4 — nenhuma outra alteração é necessária.
+       =================================================================== -->
+  <section id="secao-video" class="bg-baunilha">
+    <div class="wrap-sm centro" style="max-width:900px">
+      <h2 style="margin-bottom:14px">Veja como o Cozinha Lucrativa funciona na prática</h2>
+      <p style="margin:0 0 32px; font-size:17.5px">Conheça as planilhas por dentro e veja como organizar os custos e calcular os preços da sua produção.</p>
+      <div class="video-moldura">
+        <video src="video/cozinha-lucrativa.mp4" controls playsinline preload="metadata" poster="assets/video-poster.jpg"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3 — A DOR DA EMPREENDEDORA -->
+  <section class="bg-creme">
+    <div class="wrap-sm" style="max-width:900px">
+      <h2>Seu preço precisa considerar mais do que os ingredientes.</h2>
+      <div class="grade g-260">
+        <div class="dor"><span class="tracinho"></span>Você sabe quanto gastou na compra, mas não quanto custa cada unidade produzida?</div>
+        <div class="dor"><span class="tracinho"></span>Seu tempo de trabalho está entrando na conta?</div>
+        <div class="dor"><span class="tracinho"></span>Embalagens e taxas estão sendo consideradas?</div>
+        <div class="dor"><span class="tracinho"></span>Você sabe quanto sobra depois dos custos?</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4 — APRESENTAÇÃO -->
+  <section class="bg-baunilha">
+    <div class="wrap">
+      <h2 class="centro" style="margin-bottom:40px">Três ferramentas para organizar a precificação do seu negócio.</h2>
+      <div class="grade g-280">
+        <article class="card-produto">
+          <img src="assets/bolo.jpg" alt="Bolo de chocolate e brigadeiros artesanais">
+          <div class="conteudo">
+            <h3>Confeitaria Lucrativa</h3>
+            <p>Organize os custos das suas receitas e precifique doces, bolos e outras produções de confeitaria.</p>
+          </div>
+        </article>
+        <article class="card-produto">
+          <img src="assets/coxinha.jpg" alt="Coxinhas douradas em tábua de madeira">
+          <div class="conteudo">
+            <h3>Salgados e Lanches Lucrativos</h3>
+            <p>Calcule os custos das preparações e monte preços para salgados e lanches.</p>
+          </div>
+        </article>
+        <article class="card-produto">
+          <img src="assets/marmita.jpg" alt="Marmita montada com arroz, frango grelhado e legumes">
+          <div class="conteudo">
+            <h3>Marmitas e Refeições Lucrativas</h3>
+            <p>Organize o custo das preparações e monte refeições com os componentes cadastrados.</p>
+          </div>
+        </article>
+      </div>
+      <p class="nota nota-centro">As fotos de alimentos desta página são ilustrativas e não representam produtos de clientes.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 5 — PRINTS REAIS DAS PLANILHAS (carrossel)
+       Mais capturas podem ser adicionadas depois: coloque o arquivo em
+       assets/prints/ e adicione um novo <button class="miniatura"> abaixo,
+       com a mesma estrutura dos demais. O JS (script.js) lê os dados direto
+       destes botões, então nenhuma outra alteração de código é necessária.
+       Clicar na imagem principal amplia a imagem em tela cheia (lightbox).
+       =================================================================== -->
+  <section id="secao-prints" class="bg-creme">
+    <div class="wrap" style="max-width:900px">
+      <h2 class="centro">Conheça as ferramentas por dentro</h2>
+      <p class="centro" style="margin:0 0 40px; font-size:17.5px; color:var(--texto-suave)">Veja como as planilhas ajudam você a organizar os custos e definir os preços da sua produção.</p>
+
+      <div class="carrossel" data-carrossel aria-roledescription="carrossel" aria-label="Capturas de tela da planilha">
+        <div class="carrossel-principal">
+          <button type="button" class="carrossel-seta carrossel-anterior" aria-label="Ver captura de tela anterior">‹</button>
+          <figure class="carrossel-imagem">
+            <button type="button" class="carrossel-ampliar" aria-label="Ampliar imagem atual">
+              <img id="carrossel-img" src="assets/prints/inicio.png" alt="Aba Início da planilha, com o menu de navegação em 6 etapas">
+            </button>
+            <figcaption id="carrossel-legenda">Tela inicial</figcaption>
+          </figure>
+          <button type="button" class="carrossel-seta carrossel-proxima" aria-label="Ver próxima captura de tela">›</button>
+        </div>
+        <p class="carrossel-contador" aria-live="polite"><span id="carrossel-posicao">1</span> de <span id="carrossel-total">7</span></p>
+
+        <div class="carrossel-miniaturas" role="group" aria-label="Escolher captura de tela">
+          <button type="button" class="miniatura ativa" data-legenda="Tela inicial" aria-label="Ver tela: Tela inicial" aria-current="true">
+            <img src="assets/prints/inicio.png" alt="Aba Início da planilha, com o menu de navegação em 6 etapas" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Cadastro de insumos" aria-label="Ver tela: Cadastro de insumos">
+            <img src="assets/prints/insumos.png" alt="Aba Insumos da planilha, com a lista de ingredientes, categoria, unidade de compra e custo calculado automaticamente" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Cadastro de receitas" aria-label="Ver tela: Cadastro de receitas">
+            <img src="assets/prints/receitas.png" alt="Aba Receitas da planilha, com o tempo de produção, o rendimento e os custos calculados automaticamente" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Custos e metas" aria-label="Ver tela: Custos e metas">
+            <img src="assets/prints/custos-e-metas.png" alt="Aba Custos e Metas, com pró-labore, custos sobre as vendas, custos fixos mensais e meta de lucro" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Área de precificação" aria-label="Ver tela: Área de precificação">
+            <img src="assets/prints/precos.png" alt="Aba Preços da planilha, com a lista de produtos e as colunas de custo, preço mínimo, preço sugerido e seu preço de venda" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Simulador de preços" aria-label="Ver tela: Simulador de preços">
+            <img src="assets/prints/simulador.png" alt="Aba Simulador de Preços, mostrando o produto escolhido, o resumo de custos e o preço simulado para a margem desejada" loading="lazy">
+          </button>
+          <button type="button" class="miniatura" data-legenda="Minha Meta" aria-label="Ver tela: Minha Meta">
+            <img src="assets/prints/minha-meta.png" alt="Aba Minha Meta da planilha, com a meta mensal em destaque e a tabela de quanto vender de cada produto" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6 — COMO FUNCIONA -->
+  <section class="bg-creme">
+    <div class="wrap-md">
+      <h2 style="margin-bottom:40px">Da compra dos ingredientes ao seu preço de venda.</h2>
+      <ol class="etapas">
+        <li>
+          <span class="etapa-num">1</span>
+          <div>
+            <h3>Cadastre seus insumos</h3>
+            <p>Registre ingredientes, materiais e embalagens como eles vêm na nota da compra. A planilha calcula o custo real por grama, mililitro ou unidade.</p>
+          </div>
+        </li>
+        <li>
+          <span class="etapa-num">2</span>
+          <div>
+            <h3>Monte suas receitas</h3>
+            <p>Informe o tempo total do lote, o rendimento e tudo o que a receita usa. Materiais e mão de obra por unidade saem automaticamente.</p>
+          </div>
+        </li>
+        <li>
+          <span class="etapa-num">3</span>
+          <div>
+            <h3>Organize seus custos</h3>
+            <p>Na aba Custos e Metas entram pró-labore, horas trabalhadas, taxas sobre vendas, custos fixos e sua meta de lucro.</p>
+          </div>
+        </li>
+        <li>
+          <span class="etapa-num">4</span>
+          <div>
+            <h3>Defina seus preços</h3>
+            <p>Veja custo direto, preço mínimo e preço sugerido, e informe o preço que deseja praticar.</p>
+          </div>
+        </li>
+        <li>
+          <span class="etapa-num">5</span>
+          <div>
+            <h3>Planeje suas vendas</h3>
+            <p>Consulte na aba Minha Meta as metas mensal, semanal e diária e a quantidade estimada por produto.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7 — PRODUTOS INDIVIDUAIS E MONTADOS -->
+  <section class="bg-baunilha">
+    <div class="wrap-md">
+      <h2 style="margin-bottom:18px">Precifique uma receita ou monte um produto com diferentes preparações.</h2>
+      <p style="margin:0 0 34px; font-size:17.5px; max-width:46em">A aba <strong>Preços</strong> tem duas áreas, uma abaixo da outra.</p>
+      <div class="grade g-290">
+        <div class="bloco-preco rosa">
+          <h3>Produtos individuais</h3>
+          <p>A tabela superior traz cada receita cadastrada com custo de materiais, mão de obra, custo direto, preço mínimo, preço sugerido e o preço que você decide praticar.</p>
+        </div>
+        <div class="bloco-preco salvia">
+          <h3>Produtos montados</h3>
+          <p>Na área Composição de Produtos você combina até três receitas já cadastradas em um produto final, informa a embalagem final e o tempo de montagem.</p>
+          <p style="font-size:15px; color:var(--texto-suave)">A composição soma uma unidade de cada receita selecionada. Para meia porção ou porção dobrada, cadastre uma receita com esse rendimento.</p>
+        </div>
+      </div>
+      <div class="grade g-230" style="margin-top:22px">
+        <div class="exemplo">Bolo de brigadeiro com massa e dois recheios.</div>
+        <div class="exemplo">Lanche feito de pão, recheio e molho.</div>
+        <div class="exemplo">Marmita com arroz, proteína e acompanhamento.</div>
+      </div>
+      <p class="nota" style="margin:18px 0 0">Exemplos fictícios que já vêm preenchidos nas planilhas.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8 — O QUE VOCÊ CONSEGUE VISUALIZAR -->
+  <section class="bg-creme">
+    <div class="wrap" style="max-width:1060px">
+      <h2 style="margin-bottom:14px">O que você consegue visualizar</h2>
+      <p style="margin:0 0 34px; font-size:17.5px; max-width:46em">Cada número abaixo é calculado pela planilha a partir do que você preencher.</p>
+      <div class="grade g-240">
+        <div class="recurso"><span class="ponto"></span><h3>Custo dos materiais por unidade</h3><p>Ingredientes e embalagens do lote divididos pelo rendimento.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Mão de obra por unidade</h3><p>O tempo do lote convertido em horas pelo valor da sua hora.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Custo direto total</h3><p>Material mais mão de obra: o que aquela unidade custa para existir.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Preço mínimo</h3><p>O preço que cobre custo direto e taxas, sem nenhum lucro.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Preço sugerido</h3><p>Calculado a partir da margem desejada. É referência, não obrigação.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Seu preço de venda</h3><p>O valor que você decide cobrar, informado por você.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Lucro estimado e margem real</h3><p>A consequência do preço informado, em reais e em percentual.</p></div>
+        <div class="recurso"><span class="ponto"></span><h3>Estimativa para a meta</h3><p>Quantas unidades daquele produto fechariam a meta do mês.</p></div>
+      </div>
+      <p style="margin:26px 0 0; font-size:15px; color:var(--texto-suave); max-width:52em">Os resultados dependem inteiramente das informações preenchidas. As planilhas organizam números e mostram cenários — não garantem lucro nem faturamento.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9 — O QUE ESTÁ INCLUÍDO -->
+  <section class="bg-baunilha">
+    <div class="wrap-sm" style="max-width:800px">
+      <h2>O que você recebe no Cozinha Lucrativa?</h2>
+      <ul class="incluido">
+        <li><span class="quadrado"></span><span>Planilha Confeitaria Lucrativa em Excel.</span></li>
+        <li><span class="quadrado"></span><span>Planilha Salgados e Lanches Lucrativos em Excel.</span></li>
+        <li><span class="quadrado"></span><span>Planilha Marmitas e Refeições Lucrativas em Excel.</span></li>
+        <li><span class="quadrado"></span><span>Manual de utilização de cada planilha, com um capítulo por aba.</span></li>
+      </ul>
+      <p style="margin:0; font-size:16px; color:var(--texto-suave)">Os arquivos chegam com exemplos fictícios já preenchidos, para você ver o mecanismo funcionando antes de colocar seus próprios números. O manual explica, capítulo por capítulo, como substituir esses exemplos.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 10 — FEEDBACKS (relatos reais, editados)
+       Os três relatos abaixo foram fornecidos pela própria Stefanie, em suas
+       próprias palavras, e editados aqui apenas para ficarem mais curtos e
+       claros — não são transcrições literais nem capturas de tela do
+       WhatsApp (a seção deixa isso explícito no aviso acima dos cartões).
+       Nenhum nome, foto, data/horário ou resultado financeiro foi
+       inventado. Para editar uma mensagem, basta alterar o texto dentro do
+       bloco ".balao-feedback" ou ".cartao-feedback-complemento" do cartão
+       correspondente — a estrutura em HTML puro foi escolhida justamente
+       para facilitar esse ajuste no futuro.
+       =================================================================== -->
+  <section class="bg-creme">
+    <div class="wrap" style="max-width:1080px">
+      <p class="feedbacks-selo centro" style="display:table; margin-left:auto; margin-right:auto">💬 Relatos reais</p>
+      <h2 class="centro" style="margin-bottom:12px">Experiências reais de quem já conheceu o Cozinha Lucrativa</h2>
+      <p class="centro" style="margin:0 0 10px; font-size:17.5px; color:var(--texto-suave)">Veja como as ferramentas ajudaram diferentes profissionais a olhar com mais clareza para os custos, preços e metas dos seus negócios.</p>
+      <p class="feedbacks-aviso">Relatos reais de clientes, recebidos em conversas e editados aqui apenas para ficarem mais curtos — não são capturas de tela originais do WhatsApp.</p>
+      <div class="feedbacks-grade">
+        <article class="cartao-feedback">
+          <div class="cartao-feedback-cabecalho">
+            <span class="cartao-feedback-icone" aria-hidden="true">💆</span>
+            <span class="cartao-feedback-papel">Massagista</span>
+          </div>
+          <p class="balao-feedback">“Amei a planilha! Os ajustes para a realidade do meu negócio ficaram incríveis.”</p>
+          <p class="cartao-feedback-complemento">Uma ferramenta adaptada à realidade do negócio, com apoio para organizar as metas financeiras.</p>
+          <div class="cartao-feedback-chip"><span class="pingo"></span>Organização das metas financeiras</div>
+        </article>
+        <article class="cartao-feedback">
+          <div class="cartao-feedback-cabecalho">
+            <span class="cartao-feedback-icone" aria-hidden="true">🧁</span>
+            <span class="cartao-feedback-papel">Confeitaria</span>
+          </div>
+          <p class="balao-feedback">“Achei a planilha muito fácil de mexer. Com o manual e as explicações, consegui entender melhor como usar.”</p>
+          <p class="cartao-feedback-complemento">Ela já está trabalhando nos novos preços para planejar promoções e encontrou uma forma de organização mais fácil de acompanhar.</p>
+          <div class="cartao-feedback-chip"><span class="pingo"></span>Novos preços para promoções</div>
+        </article>
+        <article class="cartao-feedback">
+          <div class="cartao-feedback-cabecalho">
+            <span class="cartao-feedback-icone" aria-hidden="true">👁️</span>
+            <span class="cartao-feedback-papel">Lash Designer</span>
+          </div>
+          <div class="baloes-feedback">
+            <p class="balao-feedback">“A planilha ficou perfeita!”</p>
+            <p class="balao-feedback">“Percebi que meus valores não estavam cobrindo os custos.”</p>
+            <p class="balao-feedback">“Revisei minha tabela de preços e agora tenho mais direcionamento para minhas metas.”</p>
+          </div>
+          <p class="cartao-feedback-complemento">Ela revisou a tabela de preços e agora conta com mais clareza para direcionar as metas do negócio.</p>
+          <div class="cartao-feedback-chip"><span class="pingo"></span>Direcionamento para as metas</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 11 — OFERTA PRINCIPAL -->
+  <section class="oferta">
+    <div class="oferta-card">
+      <p class="sobre sobre-salvia" style="margin-bottom:12px">Oferta principal</p>
+      <h2>Leve as três planilhas por R$ 47,00.</h2>
+      <div class="oferta-lista">
+        <div>Confeitaria Lucrativa</div>
+        <div class="oferta-mais">+</div>
+        <div>Salgados e Lanches Lucrativos</div>
+        <div class="oferta-mais">+</div>
+        <div>Marmitas e Refeições Lucrativas</div>
+      </div>
+      <div class="oferta-precos">
+        <span class="preco-destaque">R$ 47,00</span>
+      </div>
+      <a class="btn btn-grande js-checkout" href="https://pay.hotmart.com/D107650182B" target="_blank" rel="noopener">Quero as 3 planilhas</a>
+      <p style="margin:22px 0 0; font-size:15px; color:var(--texto-suave)">Pagamento processado pela Hotmart.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO EXTRA (INATIVA) — COMPRA INDIVIDUAL (removida desta versão)
+       Os links de compra individual ainda não existem, então a seção foi
+       retirada da página para não exibir botões sem funcionamento nem
+       links provisórios ao público. A oferta desta versão é só o combo
+       (Seção 11 — Oferta principal), por R$ 47,00.
+       PARA REATIVAR no futuro, quando os 3 links individuais existirem:
+       descomente o bloco abaixo e troque cada LINK_* pela URL real.
+  <section class="bg-creme">
+    <div class="wrap" style="max-width:1060px">
+      <h2 class="centro" style="margin-bottom:12px">Prefere começar com apenas uma planilha?</h2>
+      <p class="centro" style="margin:0 0 34px; font-size:17px; color:var(--texto-suave)">Cada planilha individual custa R$ 47 e vem com o seu manual.</p>
+      <div class="grade g-270">
+        <div class="card-individual">
+          <h3>Confeitaria Lucrativa</h3>
+          <div class="valor">R$ 47</div>
+          <a class="btn-vazado js-checkout" href="LINK_CONFEITARIA" target="_blank" rel="noopener">Comprar esta planilha</a>
+        </div>
+        <div class="card-individual">
+          <h3>Salgados e Lanches Lucrativos</h3>
+          <div class="valor">R$ 47</div>
+          <a class="btn-vazado js-checkout" href="LINK_SALGADOS" target="_blank" rel="noopener">Comprar esta planilha</a>
+        </div>
+        <div class="card-individual">
+          <h3>Marmitas e Refeições Lucrativas</h3>
+          <div class="valor">R$ 47</div>
+          <a class="btn-vazado js-checkout" href="LINK_MARMITAS" target="_blank" rel="noopener">Comprar esta planilha</a>
+        </div>
+      </div>
+      <p class="centro" style="margin:30px 0 0; font-size:17px">As três juntas saem por <strong style="color:var(--choc)">R$ 47,00</strong> no combo. <a class="js-checkout" href="https://pay.hotmart.com/D107650182B" target="_blank" rel="noopener"><strong>Ver o combo</strong></a></p>
+    </div>
+  </section>
+       =================================================================== -->
+
+  <!-- SEÇÃO 12 — PERGUNTAS FREQUENTES -->
+  <section class="bg-baunilha">
+    <div class="wrap-sm">
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>O que recebo ao comprar o combo?</summary>
+        <p>As três planilhas em Excel — Confeitaria Lucrativa, Salgados e Lanches Lucrativos e Marmitas e Refeições Lucrativas — e o manual de utilização de cada uma.</p>
+      </details>
+      <details>
+        <summary>Posso comprar apenas uma planilha?</summary>
+        <p>No momento, a compra individual ainda não está disponível. A oferta atual é o combo com as três planilhas por R$ 47,00.</p>
+      </details>
+      <details>
+        <summary>Preciso saber usar Excel avançado?</summary>
+        <p>Não. Você digita em campos marcados e a planilha faz as contas. As células de cálculo automático são protegidas justamente para não serem alteradas por acidente.</p>
+      </details>
+      <details>
+        <summary>Em qual programa as planilhas funcionam?</summary>
+        <p>As planilhas usam fórmulas, listas e proteção de células, e funcionam no Excel para Windows, Mac ou Microsoft 365. Em editores online, algumas funções podem se comportar de forma diferente.</p>
+      </details>
+      <details>
+        <summary>As planilhas já vêm com exemplos?</summary>
+        <p>Sim. Insumos, receitas, custos e preços chegam preenchidos com um negócio fictício, para mostrar o caminho completo. Os valores são ilustrativos e não são referência de preço de mercado.</p>
+      </details>
+      <details>
+        <summary>Posso substituir os exemplos pelos dados do meu negócio?</summary>
+        <p>Sim. O manual traz um capítulo com a ordem recomendada: primeiro os insumos, depois as receitas, então os custos do negócio, os preços e por fim a conferência da meta.</p>
+      </details>
+      <details>
+        <summary>A planilha calcula um preço sugerido?</summary>
+        <p>Sim. A partir do custo direto, das taxas e da margem de lucro que você informa, a planilha calcula o preço mínimo e o preço sugerido. O preço que você vai cobrar continua sendo sua decisão, e a planilha mostra o lucro e a margem real resultantes.</p>
+      </details>
+      <details>
+        <summary>Posso montar produtos com diferentes receitas?</summary>
+        <p>Sim. A área Composição de Produtos combina até três receitas já cadastradas em um produto final, somando uma unidade de cada, mais a embalagem final e o tempo de montagem.</p>
+      </details>
+      <details>
+        <summary>Como recebo os arquivos após a compra?</summary>
+        <p>A compra é processada pela Hotmart, que envia o acesso aos arquivos após a confirmação do pagamento. Em caso de dúvida, fale com a gente pelos canais oficiais do Bastidor do Empreendedor.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 13 — ENCERRAMENTO -->
+  <section class="final">
+    <h2>Conheça seus custos. Entenda seus preços. Organize sua produção com mais clareza.</h2>
+    <a class="btn btn-grande js-checkout" href="https://pay.hotmart.com/D107650182B" target="_blank" rel="noopener">Quero o Cozinha Lucrativa</a>
+  </section>
+
+
+
+</main>
+
+<footer>
+  <div class="wrap rodape-grid" style="max-width:1060px">
+    <div class="rodape-marca">
+      <img src="assets/logo.jpg" alt="Bastidor do Empreendedor">
+      <span>Bastidor do Empreendedor</span>
+    </div>
+    <div class="rodape-links">
+      <span class="rodape-titulo">Canais oficiais</span>
+      <a href="https://instagram.com/bastidordoempreendedor" target="_blank" rel="noopener">Instagram @bastidordoempreendedor</a>
+      <a href="mailto:bastidordoempreendedor.oficial@gmail.com">bastidordoempreendedor.oficial@gmail.com</a>
+    </div>
+    <div class="rodape-aviso">
+      Cozinha Lucrativa é um produto digital. As fotos de alimentos são ilustrativas. As planilhas organizam custos e preços a partir dos dados informados e não garantem resultados financeiros.
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox" aria-hidden="true"><img alt=""></div>
+
+<script src="assets/script.js"></script>
+
+
+</body></html>
